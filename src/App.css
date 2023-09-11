@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+.chatbox{
+  border: 2px solid black;
+  background-color: bisque;
+  padding: 4.5px;
+  border-radius: 5%;
+  margin: 8px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.container.me{
+  flex-direction: row-reverse;
+}
+.me .chatbox{
+  background-color: rgb(2, 2, 152);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.btm{
+  position:fixed;
+  width: 99%;
+  bottom: 2px;
+  display: flex;
+  flex-direction: row;
+}
+.btm input{
+  padding: 11px 0;
+  flex-grow: 1;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+button{
+  background-color: burlywood;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+  border-radius: 8px;
+}
+.chat-container{
+  height: 79vh ;
+  overflow-y: scroll;
+  border: 1px solid black;
+  background-image: linear-gradient(to left,rgb(252, 208, 215),rgb(226, 190, 123));
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userName{
+  padding: 2%;
+  color: aliceblue;
+  background-image: linear-gradient(to right,rgb(53, 52, 52),gray);
 }
